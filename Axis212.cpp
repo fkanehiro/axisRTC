@@ -87,6 +87,8 @@ static int get_argument(void *cls,
       aa->move = DOWN;
   }else if (0 == strcmp(key, "zoom")){
     aa->zoom = atoi(value);
+  }else if (0 == strcmp(key, "rzoom")){
+    aa->zoom = atoi(value);
   }else if (0 == strcmp(key, "center")){
     aa->center_x = atoi(strtok((char *)value, ","));
     aa->center_y = atoi(strtok(NULL, ","));
